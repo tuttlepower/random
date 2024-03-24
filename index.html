@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Dice Roll</title>
+    <title>Dice Roll Stats</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="dice-container">
         <button onclick="rollDice()">Roll Dice</button>
+        <button onclick="rollMultipleTimes(10)">Roll 10x</button>
+        <button onclick="rollMultipleTimes(50)">Roll 50x</button>
+        <button onclick="rollMultipleTimes(100)">Roll 100x</button>
+        <button onclick="rollMultipleTimes(1000)">Roll 1000x</button>
+        <div>Total Rolls: <span id="totalRolls">0</span></div>
         <div id="result">Roll the dice!</div>
     </div>
+    <canvas id="diceChart" width="400" height="400"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
