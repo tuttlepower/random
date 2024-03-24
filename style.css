@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#dice-container {
+    text-align: center;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+}
